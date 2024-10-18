@@ -10,7 +10,7 @@ name = st.text_input("Enter your name: ")
 def greetings_function(name):
     list_greeting = ["Hi", "What's up,", "How are you,"]
     chosen_greeting = random.choice(list_greeting)
-    full_greeting = chosen_greeting + name
+    full_greeting = chosen_greeting + " " + name
     return full_greeting
 
 if st.button("Output Greeting"):
